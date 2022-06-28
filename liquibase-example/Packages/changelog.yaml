@@ -1,0 +1,24 @@
+databaseChangeLog:
+- changeSet:
+      id: package_PKG_LOG
+      author:  piszu
+      runOnChange: true
+      sqlFile:
+        dbms: oracle
+        endDelimiter: /
+        path: PKG_LOG.spc
+        relativeToChangelogFile: true
+        splitStatements: true
+        stripComments:  true
+
+- changeSet:
+      id: body_PKG_LOG
+      author:  piszu
+      runOnChange: true
+      sqlFile:
+        dbms: oracle
+        endDelimiter: /
+        path: PKG_LOG.bdy
+        relativeToChangelogFile: true
+        splitStatements: true
+        stripComments:  true
