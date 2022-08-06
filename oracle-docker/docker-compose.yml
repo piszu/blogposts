@@ -7,4 +7,6 @@ services:
     ports:
       - "1527:1521"
       - "5507:5500"
+    volumes:
+      - ./utplsql/source:/opt/oracle/utplsql:rw
     shm_size: 8g
